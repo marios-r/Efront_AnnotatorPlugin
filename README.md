@@ -10,9 +10,11 @@ A tool to enhanche personalized learning on eFront LMS.  It's a text annotation 
 Compress the files/folders in the src folder to a zip package named Annotator. 
 The structure should look like this:
 ![alt text](https://github.com/Marios-R/Efront_AnnotatorPlugin/blob/master/images/Structure.png?raw=true "Annotator structure")
+
 To install it, log in to eFront as an administrator and from your Administration dashboard, visit the plugins section.
 You will be able to view a tabular list of all your plugins that are available in your eFront. To install a new plugin click on the 'Install plugin' button (1).
 ![alt text](https://github.com/Marios-R/Efront_AnnotatorPlugin/blob/master/images/installation/ins1.png?raw=true "eFront plugins list")
+
 This will open up a pop-up window for you to upload Annotator.zip
 
 ## Start
