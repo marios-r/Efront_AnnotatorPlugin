@@ -36,6 +36,5 @@ annotate('.ef-block-content>.ef-content-area');
 4. AnnotatorJS
 
 ##### Ideas for future research
-1. Restrict sharing annotations in groups the users are members of
-2. Upvote annotations
-3. Extract user information based on the usage of Annotator. For example what tags a user is using (tag-cloud)
+1. Upvoting annotations.
+2. Annotations on videos, images and possibly TinCan packages.
