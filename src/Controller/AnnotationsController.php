@@ -218,10 +218,10 @@ class AnnotationsController extends BaseController
         $annotation = new Annotation($annotation_id); 
         $annotationTags=array();
         $annotationTagsSQL = Database::getInstance()->execute (
-            'SELECT at.tag from '.AnnotationTag::DATABASE_TABLE.' at WHERE at.annotation_ID='.$annotation_id
+            'SELECT at.tagname from '.AnnotationTag::DATABASE_TABLE.' at JOIN '.AnnotationToTag::DATABASE_TABLE.' att on att.tag_ID=at.id WHERE att.annotation_ID='.$annotation_id
         );
         foreach ($annotationTagsSQL as $tag) {
-            array_push($annotationTags,$tag['tag']);
+            array_push($annotationTags,$tag['tagname']);
         }
         $annotation=array_merge($annotation->getFields(),  array('tags'=>$annotationTags));
         return $annotation;

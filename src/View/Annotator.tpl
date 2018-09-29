@@ -26,7 +26,7 @@
                         {/foreach}
                     </td>
                     <td class="centerAlign" style="min-width:150px;">{$annotation.date}</td>
-                    <td class="centerAlign" style="min-width:150px;">
+                    <td class="centerAlign" style="min-width:170px;">
                         <a href="javascript:void(0)" data-page="{$annotation.page}" data-id="{$annotation.annotation_id}" class="fa fa-lg fa-arrow-circle-right fa-fw visit-annotation" title="Visit annotation page"></a>
                         {if $T_CURRENT_USER.id eq $annotation.user_id}
                             <!--<a href="javascript:void(0)" data-annotationid="{$annotation.annotation_id}" class="sharedAnnotationUsers fa fa-lg fa-share-alt fa-fw" title="See what users this annotation is shared with"></a>-->
@@ -229,23 +229,16 @@
                 toolbar_items_size: 'small',
                 toolbar: "bold italic | forecolor backcolor | table | link | image | charmap emoticons | code | fullscreen",
                 statusbar: false,
-                image_dimensions: false						
-        };
-        
-        /*tinymceOptions={
-	selector: "#ann-comment",
-	plugins: "link",
-	menubar: false,
-	toolbar_items_size: 'small',
-	toolbar: "bold italic | link",
-	statusbar: false,
-	setup: function(ed) {
-                ed.on('change', function(e) {
+                image_dimensions: false,
+				setup: function(ed) {
+					ed.on('change', function(e) {
                         //set the modification in the textarea of annotator
                         $("#ann-comment").val(tinymce.activeEditor.getContent());
-                });
-            }
-        }*/
+					});
+				}
+        };				
+        
+        
         tinymce.init(tinymceOptions);
         
         

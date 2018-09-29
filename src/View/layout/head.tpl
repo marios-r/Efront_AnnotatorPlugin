@@ -69,6 +69,9 @@ form.annotator-widget {
 	background-image: none !important;
     border-radius: 0px !important;
 }
+.sp-container{
+	z-index:3000000001!important
+}
 </style>
 
 <script> 

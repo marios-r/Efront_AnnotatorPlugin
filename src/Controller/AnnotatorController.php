@@ -120,7 +120,7 @@ class AnnotatorController extends BaseController
         $text = trim(strip_tags($text));
 	$text = preg_replace("#(^(&nbsp;|\s)+|(&nbsp;|\s)+$)#", "", $text);
         if(!$text){
-            $text = TL_Translator::translate("[Question without text, only media]");
+            $text = "[Question without text, only media]";
         }
         $truncateLength=70;
         if(mb_strlen($text) > $truncateLength){
